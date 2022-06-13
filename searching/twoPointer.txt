@@ -1,0 +1,7 @@
+more question on two pointer is
+Count pairs with given sum
+count triplets with given sum
+find if there is a triplet a,b,c such that a^2+b^2=c^2
+
+
+//twopointer_txt_ansswers.cpp
