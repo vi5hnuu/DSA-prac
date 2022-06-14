@@ -2,17 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Given a binary tree, connect the nodes that are at same level. You'll be given an addition nextRight pointer for the same.
-
-Initially, all the nextRight pointers point to garbage values. Your function should set these pointers to point next right for each node.
-       10                       10 ------> NULL
-      / \                       /      \
-     3   5       =>            3 ------> 5 --------> NULL
-    / \     \                  /  \           \
-   4   1   2                   4 --> 1 -----> 2 -------> NULL
-*/
-
 // Tree Node
 struct Node
 {
@@ -149,6 +138,7 @@ class Solution
 {
     public:
     //Function to connect nodes at same level.
+    /*
     void connect(Node *root)
     {
        //level order traversal will suffice the need
@@ -158,15 +148,14 @@ class Solution
        nodes.push(root);
        while(!nodes.empty()){
            int noOfNodes=nodes.size();
-           Node *firstNode=NULL;
+           Node *firstNode=nodes.front();
+           nodes.pop();
            Node *temp=NULL;
            for(int i=0;i<noOfNodes;i++){
-               temp=nodes.front();
+               temp=nodes.top();
                nodes.pop();
                if(temp->left)nodes.push(temp->left);
                if(temp->right)nodes.push(temp->right);
-
-               /////////
                if(i==0){
                    firstNode=temp;
                 }else{
@@ -176,6 +165,26 @@ class Solution
            }
            firstNode->nextRight=NULL;
        }
+    }
+    */
+
+    //not working
+    //6 7 3 2 8 N 4 3 3 1 8 N 4
+    //draw trr you will get ans
+    void connect(Node *root)
+    {
+       if(!root)
+        return;
+        if(root->left)
+            root->left->nextRight=root->right;
+        if(root->right){
+            root->right->nextRight=(root->nextRight) ? (root->nextRight->left) : NULL;
+            /*
+            this solution works fine in womplete tree only...why..make tree and think
+            */
+        }
+        connect(root->left);
+        connect(root->right);
     }
 
 };

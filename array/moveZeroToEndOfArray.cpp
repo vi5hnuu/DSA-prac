@@ -49,13 +49,14 @@ void moveZerosToEnd(int a[],int n){
     }
 }
 int main(){
-    int arr[]={8,5,0,10,0,20};
+    //int arr[]={8,5,0,10,0,20};
+    int arr[]={16,7,63,28,46,12,5,10,0};
     //int arr[]={0,0,0,10,0};
     //int arr[]={10,0,0,0,0};
     //int arr[]={10,20};
-    moveZerosToEnd(arr,6);
+    moveZerosToEnd(arr,9);
 
-    for(int i=0;i<6;i++){
+    for(int i=0;i<9;i++){
         cout<<arr[i]<<" ";
     }
 

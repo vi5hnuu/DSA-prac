@@ -158,13 +158,11 @@ class Solution{
     /*
     if we can find the pair earlier why go for inorder
     in prev sol we used O(n+H) sapce H for recursion and n for nodes..(worst case is O(n+h))
-    what if we use set and when we rtaverse inorder we see if targetSum-currentNodeData is present in set or not if yes return yes else insert the current node data...
-    and checking if some data in set takes logn time.....in java hashSet take O(1).
-
-    This approach can be used in BT also where nodes in inorder mey not be sorted...
+    what if we use unordered_set and when we taverse inorder we see if targetSum-currentNodeData is present in set or not if yes return yes else insert the current node data...
+    and checking if some data in unordered_set takes o(1) time.....in java hashSet take O(1).
     */
     private:
-    int isPairPresent(struct Node *root, int target,set<int> &check)//O(N) ,O(N) space
+    int isPairPresent(struct Node *root, int target,unordered_set<int> &check)//O(N) ,O(N) space
     {
         if(!root)
             return false;
@@ -172,7 +170,7 @@ class Solution{
         bool a=isPairPresent(root->left,target,check);
         if(a)
             return true;
-        if(check.count(target-root->data))
+        if(check.count(target-root->data))//O(1)..can be linear
             return true;
         else
             check.insert(root->data);
@@ -182,7 +180,7 @@ class Solution{
     public:
     int isPairPresent(struct Node *root, int target)//O(N) ,O(N) space
     {
-        set<int> check;
+        unordered_set<int> check;
         return isPairPresent(root,target,check);
     }
 };
