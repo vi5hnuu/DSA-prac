@@ -21,3 +21,17 @@ struct Node* reverseList(struct Node *head)
         }
         return newHead;
     }
+
+
+struct  Node* reverseList(struct Node *head)
+    {
+        Node *curr=head;
+        Node *prev=NULL;
+        while(curr){
+            Node *next=curr->next;
+            curr->next=prev;
+            prev=curr;
+            curr=next;
+        }
+        return prev;
+    }
