@@ -32,10 +32,11 @@ struct node
 
 }*head;
 */
+
 class Solution
 {
     public:
-    
+    /*
     Node* pairWiseSwap(struct Node* head){
         
         //Constraints:
@@ -66,8 +67,29 @@ class Solution
        }
        return newHead;
     }
+    */
     
-  
+    Node* pairWiseSwap(struct Node* head){
+        
+        //Constraints:
+        //1 ≤ N ≤ 103
+        if(!head)
+            return NULL;
+        Node *first=head;
+        Node *second=head->next;
+        Node *next=NULL;
+        
+        if(second){
+            next=second->next;
+            second->next=first;
+        }
+        else{
+            next=NULL;
+        }
+            first->next=pairWiseSwap(next);
+        return second ? second : first;
+            
+    }   
 };
 
 // { Driver Code Starts.

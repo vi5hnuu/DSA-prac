@@ -33,7 +33,7 @@ Node *reverseList(Node *head){
 Node *reverseList(Node *head){
   if(!head || !head->next)
     return head;
-  
+  //2  +  3->4->5->6
   Node *rest_head=reverseList(head->next);
   Node *rest_tail=head->next;
   rest_tail->next=head;
