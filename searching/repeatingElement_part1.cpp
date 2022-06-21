@@ -76,6 +76,7 @@ int repeating_element4(int arr[],int n){//do not change origninal array
 int repeating_element5(int arr[],int n){//do not change origninal array
     //modified for array containing zero[as per ques the array always contain zero]..it work in cycle
 
+    //floyd method of detecting cycle in linked list
     int slow=arr[0]+1,fast=arr[0]+1;
     do{
         slow=arr[slow]+1;
