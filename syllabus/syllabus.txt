@@ -1,0 +1,24 @@
+Introduction																done
+Mathematics																	done
+Bit Magic																	done
+Recursion																	done
+Arrays																		done
+Searching																	done
+Sorting																		not done
+Matrix    																	not done
+Hashing												
+Strings	
+Linked List	
+Stack																		done
+Queue																		done
+Deque																		done
+Tree																		done
+Binary Search Tree															done
+Heap	
+Graph	
+Greedy	
+Backtracking	
+Dynamic Programming	
+Trie	
+Segment and Binary Indexed Trees	
+Disjoint Set
