@@ -1,7 +1,14 @@
 {
   "files.associations": {
-    "*.py": "python",
-    "iosfwd": "cpp",
-    "iostream": "cpp"
+    "*.embeddedhtml": "html",
+    "*.ejs": "html",
+    "iostream": "cpp",
+    "random": "cpp",
+    "string": "cpp",
+    "algorithm": "cpp",
+    "limits": "cpp",
+    "utility": "cpp",
+    "xutility": "cpp",
+    "stack": "cpp"
   }
 }
