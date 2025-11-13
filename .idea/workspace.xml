@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dsa-self-paced--old/test.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsa-self-paced--old/tempCodeRunnerFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/dsa-self-paced--old/tempCodeRunnerFile.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,8 @@
       <workItem from="1761111667337" duration="407000" />
       <workItem from="1761112122044" duration="9000" />
       <workItem from="1761358980868" duration="6764000" />
+      <workItem from="1762053951538" duration="2127000" />
+      <workItem from="1762917151605" duration="792000" />
     </task>
     <servers />
   </component>
