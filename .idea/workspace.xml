@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsa-self-paced--old/tempCodeRunnerFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/dsa-self-paced--old/tempCodeRunnerFile.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +68,7 @@
       <workItem from="1761358980868" duration="6764000" />
       <workItem from="1762053951538" duration="2127000" />
       <workItem from="1762917151605" duration="792000" />
+      <workItem from="1763087373148" duration="140000" />
     </task>
     <servers />
   </component>
