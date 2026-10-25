@@ -71,24 +71,26 @@ Since `&score` is an address, `*(&score)` means "the value stored at the address
 int main(void)
 {
     int score = 42;
+    int direct = score;          /* read the variable by its name   */
+    int indirect = *(&score);    /* read it through its address     */
 
-    printf("Address of score = %p\n", (void *)&score);
-    printf("Value of score   = %d\n", score);
-    printf("Value of score   = %d\n", *(&score));
+    printf("Read by name:    %d\n", direct);
+    printf("Read by address: %d\n", indirect);
+    printf("Same value?      %s\n", direct == indirect ? "yes" : "no");
 
     return 0;
 }
 ```
 
-Sample output:
+Output:
 
 ```
-Address of score = 0x7ffe1c7cfa14
-Value of score   = 42
-Value of score   = 42
+Read by name:    42
+Read by address: 42
+Same value?      yes
 ```
 
-The last two lines are always identical. `&` and `*` undo each other: `&` goes from a variable to its address, and `*` goes from an address back to the value.
+Both reads always give the same value. `&` and `*` undo each other: `&` goes from a variable to its address, and `*` goes from an address back to the value.
 
 | Expression | Meaning | In the example |
 |---|---|---|
