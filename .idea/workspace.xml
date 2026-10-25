@@ -4,7 +4,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="" />
+    <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Array_insert_at_end" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Contest/Get_the_shadow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Contest/Nearest_perfect_Square.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Contest/The_conversion_to_One.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Inorder traversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Insert_node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Level_order.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Minimum_element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Node in a given level.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Print BST in  A GIVEN RANGE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Searchanode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/alternate leaf node sum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/strange Median.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/BinarytoGray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Bit_difference.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/First_set_bit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Longest_Consecutive1's.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Number_is_sparse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Power_of_2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Rightmost_different_bit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/kth_bit_set.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Hashing/K_Sum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Hashing/XOR_Pair.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Hashing/kth_smallest_distance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/A_Boolean_matRIX_problem.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Toggle_the_middle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Without_Adjacent.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Without_Adjacent_othermethod.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Without_Adjacent_othermethod_space.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Greedy/Shop in Candy Store.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Hashing/Pair of Element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Absolute Value.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Addition_Under_Modulo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/CelciusToFahrienheit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Digits_In_Factorial.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Factorial_of_number.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/GP_Term.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Modular_Multiplicative_Inverse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Multiplication_Under_Modulo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Primality_Test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Print 1 To N Without Loop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Quadratic_Equation_Roots.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Recursion/Sum_of_digits.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Anagram.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Binary string.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Distance_pattern_search.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Implement_strstr.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Keypad.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Lexicographic.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Maximum_occuring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Modified_string.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Naive_pattern_search.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Non_repeating.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Panagram.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Pattern_search_KMP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Rabincarp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Remove_characters.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Repating_character.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Reverse_words.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/String_rotated_ornot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Sumofanoinastring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/BTtoCdll.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/CheckforBalancedTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Checkifsubtree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/ContructBinaryTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Count_noofsub_sum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Create_nodeat_samelevel.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/DiameterofBT.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/FOldable.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LeftViewofBinaryTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LevelOrderTraversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LevelOrderTraversal_1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LevelOrderTraversal_SP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LowestCOmmonancestor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Makebinarytree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximu_sum_of_NON-ADJACENT.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximum_diffe_bw_NA.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximum_path_sum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximumwidthoftree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/MirrorTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Nodeatdistance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/RightViewofBinaryTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Serialize_and_deserialize.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/TreefromPostIN.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/VerticalwidthofBT.cpp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,25 +118,29 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="34POJHGY2A5xwRWnKhqFQsG3YKW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
