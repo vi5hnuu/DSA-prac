@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" height="230" role="img" aria-label="Memory map: score holds 42 at address 1004; ptr holds 1004 at address 2008 and points to score">
+<title>Memory map of score and ptr = &amp;score</title>
+<defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker></defs>
+<rect x="0" y="0" width="560" height="230" rx="12" fill="#f8fafc"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#0f172a">
+  <text x="140" y="44" font-size="17" font-weight="700" text-anchor="middle">score</text>
+  <rect x="90" y="60" width="100" height="56" rx="8" fill="#dbeafe" stroke="#475569" stroke-width="2"/>
+  <text x="140" y="95" font-size="20" font-weight="600" text-anchor="middle">42</text>
+  <text x="140" y="142" font-size="15" text-anchor="middle" fill="#334155">address 1004</text>
+
+  <text x="420" y="44" font-size="17" font-weight="700" text-anchor="middle">ptr</text>
+  <rect x="370" y="60" width="100" height="56" rx="8" fill="#fde68a" stroke="#475569" stroke-width="2"/>
+  <text x="420" y="95" font-size="20" font-weight="600" text-anchor="middle">1004</text>
+  <text x="420" y="142" font-size="15" text-anchor="middle" fill="#334155">address 2008</text>
+
+  <path d="M370,88 L196,88" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#ah2)"/>
+  <text x="283" y="78" font-size="14" text-anchor="middle" fill="#1d4ed8">points to</text>
+
+  <text x="20" y="178" font-size="14">ptr is an ordinary variable with its own address (2008).</text>
+  <text x="20" y="198" font-size="14">What it stores is another variable's address (1004).</text>
+  <text x="20" y="220" font-size="12" fill="#64748b">Both addresses are illustrations; real ones change from run to run.</text>
+</g>
+</svg>
