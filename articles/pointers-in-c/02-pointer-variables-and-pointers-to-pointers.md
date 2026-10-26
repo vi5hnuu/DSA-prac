@@ -1,7 +1,5 @@
 # Pointer Variables and Pointers to Pointers
 
-::problem{slug=pointer-variables-and-pointers-to-pointers}
-
 The previous article showed that `&x` gives the address of `x`, and that `*` gives the value stored at an address. It ended by storing an address in a second variable. This article looks closely at that variable: how it is declared, what its declaration really says, how one pointer can hold the address of another, and the vocabulary programmers use when they talk about pointers.
 
 ## Declaring a Pointer

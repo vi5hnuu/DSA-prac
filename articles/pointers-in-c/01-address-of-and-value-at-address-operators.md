@@ -1,7 +1,5 @@
 # The & and * Operators in C
 
-::problem{slug=address-of-and-value-at-address-operators}
-
 Pointers have a reputation for being the hardest part of C. Most of that difficulty comes from the vocabulary — "this variable *points to* that one" sounds mysterious — rather than from the idea itself. Underneath, a pointer is built from two very small operators: `&` and `*`. This article explains both, starting from what actually happens in memory when you declare an ordinary variable.
 
 ## What a Declaration Really Does

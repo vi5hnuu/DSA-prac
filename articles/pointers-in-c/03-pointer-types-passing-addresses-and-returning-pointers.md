@@ -1,7 +1,5 @@
 # Pointer Types, Passing Addresses to Functions, and Returning Pointers
 
-::problem{slug=pointer-types-passing-addresses-and-returning-pointers}
-
 The earlier articles used `int` pointers only. This one answers three practical questions:
 
 1. Why does a pointer need a type at all, if every pointer just holds an address?
