@@ -1,6 +1,5 @@
 # Pointer Types, Passing Addresses to Functions, and Returning Pointers
 
-::problem{slug=pointer-types-passing-addresses-and-returning-pointers}
 
 The earlier articles used `int` pointers only. This one answers three practical questions:
 
