@@ -339,7 +339,7 @@ int main(void)
 
 :::details[Answer]
 ```
-4:30 3:24 2:18 1:12 0:6
+4:30 3:24 2:18 1:12 0:6 
 ```
 
 This walks backwards like puzzle 8, but prints `arr[ptr - arr]` instead of `*ptr`. What is `ptr - arr`?

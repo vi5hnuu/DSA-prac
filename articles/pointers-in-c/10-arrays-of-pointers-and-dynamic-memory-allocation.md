@@ -41,7 +41,7 @@ int main(void)
 }
 ```
 
-A sample run:
+A sample run (the addresses will be different on your machine and on every run):
 
 ```
 zone[0] holds 0x7ffdd081179c -> 42

@@ -47,7 +47,7 @@ int main(void)
 }
 ```
 
-A sample run:
+A sample run (the addresses will be different on your machine and on every run):
 
 ```
 -- addresses --
@@ -148,7 +148,7 @@ int main(void)
 }
 ```
 
-A sample run:
+A sample run (the addresses will be different on your machine and on every run):
 
 ```
 -- where each variable lives --

@@ -35,7 +35,7 @@ int main(void)
 }
 ```
 
-A sample run on a typical 64-bit machine:
+A sample run on a typical 64-bit machine (the addresses will be different on yours):
 
 ```
 grade_ptr holds 0x7ffe1dfa1e73, *grade_ptr = B
@@ -244,7 +244,7 @@ int *get_limit(void)
 }
 ```
 
-Sample output:
+Sample output (the address will be different on your machine):
 
 ```
 limit_ptr holds 0x557f9a240010
