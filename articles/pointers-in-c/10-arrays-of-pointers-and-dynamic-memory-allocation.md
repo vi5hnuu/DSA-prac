@@ -205,6 +205,12 @@ Let's go through it piece by piece.
 
 **Asking for the right number of bytes.** `malloc` counts in **bytes**, so we ask for `n * sizeof *marks` — `n` times the size of one `int`. Writing `sizeof *marks` instead of a fixed number like `4` (or the `2` that old 16-bit compilers used) keeps the program correct on every system, and stays correct even if `marks` later becomes a pointer to `double`.
 
+:::callout{kind=warning}
+Mind the `*`: it is `sizeof *marks`, **not** `sizeof marks`. `*marks` is one `int` — what the pointer points to — so `sizeof *marks` is 4. `marks` is the pointer itself, so `sizeof marks` is the size of a pointer: 8 on a 64-bit system. `n * sizeof marks` would therefore ask for the wrong amount of memory — too much here, and too little for element types larger than a pointer.
+
+It is also safe to write `*marks` before `marks` has a value: `sizeof` never evaluates its operand. It only looks at the operand's **type**, so nothing is actually dereferenced.
+:::
+
 **Storing the address.** `malloc` does not know what you will keep in the block, so it returns a generic `void *`. In C, a `void *` converts to any other object pointer automatically, so no cast is needed when assigning it to `marks`. (Older code often writes `(int *) malloc(...)`; the cast is harmless but unnecessary in C. C++ is different and does require it.)
 
 **Checking for failure.** If the system cannot provide the memory, `malloc` returns `NULL`. Using a `NULL` pointer would crash the program, so always check before using the block.
