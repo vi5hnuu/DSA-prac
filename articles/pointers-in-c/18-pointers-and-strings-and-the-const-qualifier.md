@@ -1,3 +1,7 @@
+title : Pointers and Strings, and the const Qualifier
+
+summary : char arrays vs pointers to string literals: what can be assigned, what can be changed, and why modifying a literal crashes. Then master const, including const char *, char *const and returning const.
+
 # Pointers and Strings, and the const Qualifier
 
 There are two ways to give a name to a piece of text in C. You can store it in a `char` **array**, or you can let the compiler store it somewhere and keep its address in a `char` **pointer**. The two look almost identical when you use them, but they behave differently in ways that cause real bugs.

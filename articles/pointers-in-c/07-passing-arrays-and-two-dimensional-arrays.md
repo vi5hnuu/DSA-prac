@@ -1,3 +1,7 @@
+title : Passing Arrays to Functions and Two-Dimensional Arrays
+
+summary : What really happens when you pass an array to a function, and how two-dimensional arrays are stored row by row. Learn pointers to arrays and the ways to receive a 2-D array in a function.
+
 # Passing Arrays to Functions and Two-Dimensional Arrays
 
 In the previous article we passed array elements to functions **one at a time** — either a copy of each element, or the address of each element. That works, but it is clumsy: a function that wants to total, sort or print an array should be able to receive the **whole array** in one go.

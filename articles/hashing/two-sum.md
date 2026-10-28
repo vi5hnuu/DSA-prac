@@ -1,3 +1,7 @@
+title : Two Sum
+
+summary : Find two numbers in an array that add up to a target. Start with the simple brute-force check of every pair, then cut it to a single pass using a hash map, with clear complexity comparisons and code in C++, Java and Python.
+
 # Two Sum
 
 ::problem{slug=two-sum}

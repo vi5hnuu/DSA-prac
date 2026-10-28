@@ -1,3 +1,7 @@
+title : Strings: Worked Examples
+
+summary : Worked puzzles on strings: the '\0' terminator, adding numbers to string literals, comparing strings with ==, sizeof on arrays of pointers and more. Predict the output, then check the explanation.
+
 # Strings: Worked Examples
 
 These puzzles test everything from the strings articles: the `'\0'` terminator, string literals, `%s` and `%c`, `strlen`, `sizeof`, and the difference between an array and a pointer. As before, work out each answer **before** opening the solution — a sketch of the characters in memory, numbered from 0, settles almost every one of them.

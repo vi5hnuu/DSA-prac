@@ -1,3 +1,7 @@
+title : Arrays of Pointers and Dynamic Memory Allocation
+
+summary : Build arrays that hold addresses, and allocate memory while the program runs with malloc, calloc, realloc and free. Learn to size requests with sizeof, check for NULL and avoid memory leaks.
+
 # Arrays of Pointers and Dynamic Memory Allocation
 
 So far every array we have built held ordinary values: `int`s, `double`s, `char`s. But a pointer is a variable too, so nothing stops us from making an **array of pointers** — a collection of addresses. That simple idea turns out to be remarkably useful: it lets one array reach variables scattered all over memory, and it lets us build "tables" whose rows have different lengths.

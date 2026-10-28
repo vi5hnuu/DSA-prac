@@ -1,3 +1,7 @@
+title : Arrays and Pointers: Worked Examples
+
+summary : Worked puzzles on arrays and pointers: array names as base addresses, pointer arithmetic, sizeof, and 2-D array addresses. Predict each output, then read the step-by-step explanation.
+
 # Arrays and Pointers: Worked Examples
 
 These puzzles test everything from the last few articles: array names as base addresses, pointer arithmetic, `sizeof`, 2-D arrays and pointers to pointers. For each one, work out your answer **before** opening the solution — ideally on paper, drawing the array and its addresses.

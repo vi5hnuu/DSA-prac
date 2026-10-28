@@ -1,3 +1,7 @@
+title : Intersection of Two Linked Lists
+
+summary : Find the node where two linked lists merge. Three approaches: a hash set of visited nodes, skipping the length difference, and the elegant trick of switching lists at the end, all in O(1) or O(n) space.
+
 # Intersection of Two Linked Lists
 
 ::problem{slug=intersection-of-two-linked-lists}

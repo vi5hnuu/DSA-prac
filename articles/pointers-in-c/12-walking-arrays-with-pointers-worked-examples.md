@@ -1,3 +1,7 @@
+title : Walking Arrays with Pointers: Worked Examples
+
+summary : More worked puzzles: pointers that walk through arrays forwards and backwards, ++ and * combinations, and pointer subtraction. Each answer is explained step by step with runnable code.
+
 # Walking Arrays with Pointers: Worked Examples
 
 This set of puzzles is all about **movement**: pointers stepping forwards and backwards through arrays, subscripts that turn out to be pointer arithmetic, and functions that change an array through its address. Each puzzle is short, but most hide one precise rule. Predict the output first — draw the array, write the addresses under it, and move your pointer by hand — then open the answer.

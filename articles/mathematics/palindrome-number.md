@@ -1,3 +1,7 @@
+title : Palindrome Number
+
+summary : Check whether an integer reads the same forwards and backwards. Compare converting it to a string with reversing the number mathematically, and see why negative numbers are never palindromes.
+
 # Palindrome Number
 
 ::problem{slug=palindrome-number}

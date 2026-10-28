@@ -1,3 +1,7 @@
+title : Reverse Linked List
+
+summary : Reverse a singly linked list. Learn the classic iterative three-pointer method and two recursive versions, with step-by-step diagrams of how the links change.
+
 # Reverse Linked List
 
 ::problem{slug=reverse-linked-list}

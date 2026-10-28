@@ -1,3 +1,7 @@
+title : Strings: Programming Exercises
+
+summary : Write string functions yourself: find a character, find a substring, sort names, compress repeated spaces and encode a message. Each exercise has a hint and a full, runnable solution.
+
 # Strings: Programming Exercises
 
 Time to write string code yourself. Each exercise below asks for a function or a small program. Try it on your own first — the hints describe the idea without giving the code away — and then compare with the solution. Every solution is a complete, runnable program, so you can also experiment with it: change the inputs, break it on purpose, and see what happens.

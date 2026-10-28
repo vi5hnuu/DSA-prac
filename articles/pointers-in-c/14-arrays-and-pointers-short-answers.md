@@ -1,3 +1,7 @@
+title : Arrays and Pointers: Short Answers
+
+summary : Short questions that test whether you truly understand arrays and pointers: array vs pointer access, when an array name is not its base address, arr vs &arr, char a[] vs char *a, and more.
+
 # Arrays and Pointers: Short Answers
 
 The worked examples asked you to trace programs. This article asks you to **explain** them. Each question below is the kind an interviewer or examiner asks to check whether you really understand how arrays and pointers relate, or only remember the syntax.

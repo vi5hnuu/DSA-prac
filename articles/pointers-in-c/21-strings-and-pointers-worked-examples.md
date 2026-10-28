@@ -1,3 +1,7 @@
+title : Strings and Pointers: Worked Examples
+
+summary : Puzzles with pointers walking through strings: printing backwards, two pointers meeting in the middle, one-line string copy, three levels of pointers, and arrays of strings.
+
 # Strings and Pointers: Worked Examples
 
 This second set of puzzles moves from single characters to **pointers walking through strings**: pointers that start in the middle, run backwards, meet in the middle, copy strings, and even a pointer to a pointer to a pointer. It ends with arrays of strings. For each one, draw the characters with their positions, mark where each pointer is, and move the marks as the code runs.

@@ -1,3 +1,7 @@
+title : Valid Parentheses
+
+summary : Check whether a string of brackets is balanced and properly nested. Use a stack to match each closing bracket with the latest opening one, plus a neat ASCII trick for matching pairs.
+
 # Valid Parentheses
 
 ::problem{slug=valid-parentheses}

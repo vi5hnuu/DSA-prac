@@ -1,3 +1,7 @@
+title : Pointer Types, Passing Addresses to Functions, and Returning Pointers
+
+summary : Why pointers have types, how passing addresses lets a function change the caller's variables (call by reference), and how to return pointers safely without leaving them dangling.
+
 # Pointer Types, Passing Addresses to Functions, and Returning Pointers
 
 

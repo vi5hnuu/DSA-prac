@@ -1,3 +1,7 @@
+title : Standard String Functions — and Writing Your Own
+
+summary : Learn strlen, strcpy, strcat and strcmp from <string.h>, then write each one yourself with pointers. Includes buffer overflow pitfalls, why strcmp only guarantees a sign, and safer snprintf.
+
 # Standard String Functions — and Writing Your Own
 
 Since a C string is just a `char` array ending in `'\0'`, C has no built-in operators for text: you cannot write `a + b` to join two strings or `a == b` to compare them. Instead, the standard library provides a large set of **string functions**, declared in the header `<string.h>`.

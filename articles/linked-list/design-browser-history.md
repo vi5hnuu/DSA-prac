@@ -1,3 +1,7 @@
+title : Design Browser History
+
+summary : Build a browser history that supports visit, back and forward. Compare two designs, a doubly linked list and two stacks, and see how each handles moving through pages and clearing forward history.
+
 # Design Browser History
 
 ::problem{slug=design-browser-history}

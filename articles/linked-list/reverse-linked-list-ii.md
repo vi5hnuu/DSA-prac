@@ -1,3 +1,7 @@
+title : Reverse Linked List II
+
+summary : Reverse only the part of a linked list between two positions. Find the node before the range, reverse the range in place, and reconnect both ends, all in one pass.
+
 # Reverse Linked List II
 
 ::problem{slug=reverse-linked-list-ii}

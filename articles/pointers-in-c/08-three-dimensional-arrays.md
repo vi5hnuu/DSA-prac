@@ -1,3 +1,7 @@
+title : Three-Dimensional Arrays
+
+summary : How a three-dimensional array is stored in memory, how to reach any element using pointer notation, and how to pass 3-D arrays to functions, with clear memory diagrams.
+
 # Three-Dimensional Arrays
 
 A one-dimensional array is a **line** of values. A two-dimensional array is a **table**: rows of lines. Add one more level and you get a **three-dimensional array**: a stack of tables.

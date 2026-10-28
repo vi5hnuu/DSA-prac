@@ -1,3 +1,7 @@
+title : Reverse Integer
+
+summary : Reverse the digits of a 32-bit integer, returning 0 if the result overflows. Pop and push digits one at a time and detect overflow before it happens, without using 64-bit integers.
+
 # Reverse Integer
 
 ::problem{slug=reverse-integer}

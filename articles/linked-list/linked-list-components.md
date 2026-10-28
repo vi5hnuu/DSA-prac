@@ -1,3 +1,7 @@
+title : Linked List Components
+
+summary : Count the connected groups formed by a set of values inside a linked list. Use a hash set and count where each run of matching nodes ends, a one-pass O(n) solution with code in C++, Java and Python.
+
 # Linked List Components
 
 ::problem{slug=linked-list-components}

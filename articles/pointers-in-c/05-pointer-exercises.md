@@ -1,3 +1,7 @@
+title : Pointer Exercises
+
+summary : Practice exercises on pointer basics: predict outputs, find bugs and write small programs using addresses, pointer variables and functions that receive addresses. Solutions included.
+
 # Pointer Exercises
 
 Time to test yourself. Each exercise below is a short program or statement about pointers. Work out your answer first — on paper, using a memory map if it helps — and only then open the answer.

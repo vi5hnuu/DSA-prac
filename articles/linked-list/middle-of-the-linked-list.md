@@ -1,3 +1,7 @@
+title : Middle of the Linked List
+
+summary : Find the middle node of a linked list. Count the nodes and walk halfway, or use the slow and fast pointer (tortoise and hare) technique to find it in a single pass.
+
 # Middle of the Linked List
 
 ::problem{slug=middle-of-the-linked-list}

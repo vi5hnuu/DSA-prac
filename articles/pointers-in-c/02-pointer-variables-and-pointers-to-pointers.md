@@ -1,3 +1,7 @@
+title : Pointer Variables and Pointers to Pointers
+
+summary : A pointer is a variable that stores an address. Learn how to declare and use pointer variables, how a pointer to a pointer works, and the jargon of pointers, with memory diagrams.
+
 # Pointer Variables and Pointers to Pointers
 
 

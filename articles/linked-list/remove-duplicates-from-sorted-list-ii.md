@@ -1,3 +1,7 @@
+title : Remove Duplicates from Sorted List II
+
+summary : Remove every value that appears more than once in a sorted linked list, keeping only distinct values. Build the result while scanning, with a dummy head to handle duplicates at the start.
+
 # Remove Duplicates from Sorted List II
 
 ::problem{slug=remove-duplicates-from-sorted-list-ii}

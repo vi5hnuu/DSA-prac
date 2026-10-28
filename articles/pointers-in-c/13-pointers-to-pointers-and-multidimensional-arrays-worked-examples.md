@@ -1,3 +1,7 @@
+title : Pointers to Pointers and Multi-Dimensional Arrays: Worked Examples
+
+summary : Advanced puzzles combining pointers to pointers, arrays of pointers and multi-dimensional arrays. Untangle expressions like **++ptr and *++*ptr with diagrams and step-by-step answers.
+
 # Pointers to Pointers and Multi-Dimensional Arrays: Worked Examples
 
 The final set of chapter puzzles combines the hardest ideas so far: an **array of pointers**, a **pointer to a pointer** walking through it, and the row-and-column machinery of 2-D and 3-D arrays. Expressions like `*++*ptr` and `++**ptr` look like line noise at first — but every one of them is just a short sequence of the two moves you already know: *follow an address* (`*`) and *move or change something* (`++`).

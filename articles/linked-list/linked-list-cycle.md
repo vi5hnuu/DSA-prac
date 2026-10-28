@@ -1,3 +1,7 @@
+title : Linked List Cycle
+
+summary : Detect whether a linked list loops back on itself. Compare a hash set of visited nodes, Floyd's slow and fast pointers, and a marker-redirect trick, with diagrams and the trade-offs of each.
+
 # Linked List Cycle
 
 ::problem{slug=linked-list-cycle}

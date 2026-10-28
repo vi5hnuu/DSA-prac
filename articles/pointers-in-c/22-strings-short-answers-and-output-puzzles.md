@@ -1,3 +1,7 @@
+title : Strings: Short Answers and Output Puzzles
+
+summary : Short questions on strcat with literals, defining your own strcpy, and processing strings, followed by output puzzles that combine pointers, strcmp, strcat and 3-D char arrays.
+
 # Strings: Short Answers and Output Puzzles
 
 This article has two parts. The first asks short questions about strings and pointers — the kind that check whether you understand **why** C behaves as it does. The second is a set of output puzzles that combine several ideas at once. As always, answer each one yourself before opening the solution.

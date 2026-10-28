@@ -1,3 +1,7 @@
+title : Pointer Worked Examples
+
+summary : Test your understanding of &, * and pointers to pointers with worked puzzles. Predict each program's output, then check the step-by-step explanation and the corrected modern C.
+
 # Pointer Worked Examples
 
 This article works through a set of pointer puzzles that test everything covered so far: `&` and `*`, pointer types, call by reference, and functions that return pointers. Try to answer each one before opening the explanation.

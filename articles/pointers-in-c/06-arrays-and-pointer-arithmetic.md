@@ -1,3 +1,7 @@
+title : Arrays and Pointer Arithmetic
+
+summary : How arrays are laid out in memory, why an array name gives its base address, and how pointer arithmetic moves by whole elements. Learn why a[i] means *(a + i) and which pointer operations are allowed.
+
 # Arrays and Pointer Arithmetic
 
 Arrays and pointers are so tightly linked in C that you cannot really understand one without the other. Every time you walk through an array, pointers are involved behind the scenes. This article starts the connection: what an array is and how it sits in memory, how to hand array elements to functions, and the **pointer arithmetic** that lets a pointer move from one element to the next.

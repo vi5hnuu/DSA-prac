@@ -1,3 +1,7 @@
+title : Add Two Numbers
+
+summary : Add two numbers whose digits are stored in reverse order in linked lists. Learn the digit-by-digit addition with a carry, how to handle lists of different lengths and a final carry, with code in C++, Java and Python.
+
 # Add Two Numbers
 
 ::problem{slug=add-two-numbers}

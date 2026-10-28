@@ -1,3 +1,7 @@
+title : Add Binary
+
+summary : Add two binary numbers given as strings and return the sum as a binary string. Work column by column from the right with a carry, just like addition by hand.
+
 # Add Binary
 
 ::problem{slug=add-binary}

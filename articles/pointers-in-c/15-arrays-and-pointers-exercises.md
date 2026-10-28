@@ -1,3 +1,7 @@
+title : Arrays and Pointers: Exercises
+
+summary : Exercises on 3-D array addresses, arrays of pointers to rows and blocks, a spot-the-bug puzzle on undefined behaviour, and shuffled pointer arrays. Full answers with diagrams.
+
 # Arrays and Pointers: Exercises
 
 This last set of chapter 2 exercises puts multi-dimensional arrays, arrays of pointers and pointers to pointers together. Each program is short, but you need to keep track of **types**, because the type of each expression decides where it points and how far `+ 1` moves.

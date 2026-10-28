@@ -1,3 +1,7 @@
+title : Strings: Character Arrays and the Null Terminator
+
+summary : A C string is a char array ending in '\0'. Learn why the terminator matters, how to walk a string with indexes and pointers, and how to print and read strings safely with %s, scanf and fgets.
+
 # Strings: Character Arrays and the Null Terminator
 
 The last two chapters covered arrays of every shape: one, two and three dimensions, initialising them, passing them to functions, and walking through them with pointers. With that behind you, strings are easy, because **a string in C is simply a special kind of array**: an array of characters with a marker at the end.

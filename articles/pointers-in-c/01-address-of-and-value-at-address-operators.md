@@ -1,3 +1,7 @@
+title : The & and * Operators in C
+
+summary : Every variable in C lives at an address in memory. Learn what an address is, how the & operator gets it, and how the * operator reads the value stored there, with runnable examples and diagrams.
+
 # The & and * Operators in C
 
 

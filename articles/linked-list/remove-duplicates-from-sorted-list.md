@@ -1,3 +1,7 @@
+title : Remove Duplicates from Sorted List
+
+summary : Delete repeated values from a sorted linked list so each value appears once. Two simple approaches: skip all copies at once, or use two pointers, with diagrams and edge cases.
+
 # Remove Duplicates from Sorted List
 
 ::problem{slug=remove-duplicates-from-sorted-list}

@@ -1,3 +1,7 @@
+title : Arrays of Strings: 2-D char Arrays vs Arrays of Pointers
+
+summary : Store a list of strings as a 2-D char array or as an array of pointers. Compare memory use on 64-bit systems, swapping strings, and reading strings in with malloc, with clear diagrams.
+
 # Arrays of Strings: 2-D char Arrays vs Arrays of Pointers
 
 One string is a one-dimensional array of characters. So how do you store a **list** of strings — a list of names, words or commands? C gives you two ways:

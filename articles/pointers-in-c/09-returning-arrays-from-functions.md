@@ -1,3 +1,7 @@
+title : Returning Arrays from Functions
+
+summary : A C function cannot return an array directly. Learn the ways around it: returning pointers, static arrays and their shared-storage trap, typedefs for array pointers, and caller-provided buffers.
+
 # Returning Arrays from Functions
 
 We now know how to **pass** 2-D and 3-D arrays to functions. The natural next question is the reverse: how does a function **give an array back**?

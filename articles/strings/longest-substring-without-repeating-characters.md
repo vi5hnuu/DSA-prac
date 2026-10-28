@@ -1,3 +1,7 @@
+title : Longest Substring Without Repeating Characters
+
+summary : Find the length of the longest substring with no repeated characters. Go from an O(n²) scan to an O(n) sliding window that remembers the last index of each character.
+
 # Longest Substring Without Repeating Characters
 
 ::problem{slug=longest-substring-without-repeating-characters}

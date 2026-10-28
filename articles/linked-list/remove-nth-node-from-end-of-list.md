@@ -1,3 +1,7 @@
+title : Remove Nth Node From End of List
+
+summary : Remove the nth node from the end of a linked list. Count the length first, or use two pointers with a gap of n to do it in a single pass, with a dummy node for removing the head.
+
 # Remove Nth Node From End of List
 
 ::problem{slug=remove-nth-node-from-end-of-list}

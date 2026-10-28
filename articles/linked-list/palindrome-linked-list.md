@@ -1,3 +1,7 @@
+title : Palindrome Linked List
+
+summary : Check whether a linked list reads the same both ways. Three approaches: copy into an array, stack the second half, and reverse the second half in place for O(1) extra space.
+
 # Palindrome Linked List
 
 ::problem{slug=palindrome-linked-list}

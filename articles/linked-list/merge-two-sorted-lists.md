@@ -1,3 +1,7 @@
+title : Merge Two Sorted Lists
+
+summary : Merge two sorted linked lists into one sorted list by splicing nodes, not copying them. Covers an iterative approach with a dummy head and a recursive approach, with diagrams and edge cases.
+
 # Merge Two Sorted Lists
 
 ::problem{slug=merge-two-sorted-lists}
