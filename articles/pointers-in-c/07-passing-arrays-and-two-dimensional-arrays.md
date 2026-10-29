@@ -221,6 +221,10 @@ int main(void)
 [2][0]=20 @ +32   [2][1]=22 @ +36   [2][2]=19 @ +40   [2][3]=25 @ +44   
 ```
 
+:::callout{kind=note}
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the array. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
+:::
+
 The byte offsets climb steadily by 4 from `0` to `44` — twelve `int`s in one unbroken chain. Element `[1][0]` sits directly after `[0][3]`:
 
 ![The 3 by 4 array sales pictured as a table of 3 rows and 4 columns, and its real storage as 12 ints in one line, row 0 then row 1 then row 2; element sales[2][1] is element number 9, at byte offset 36](images/2d-array-in-memory.svg)

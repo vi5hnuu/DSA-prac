@@ -141,6 +141,10 @@ a1.bal      at +20 (offsetof says 20)
 sizeof a1 = 24 bytes
 ```
 
+:::callout{kind=note}
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the structure. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. `&a1.no` is an `int *` and `&a1.bal` a `float *`, so both are cast; `a1.acc_name` needs no cast, because it is a `char` array and its name already gives a `char *`. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
+:::
+
 Padding depends on the order of the members. Putting a `char` between two larger members wastes space; grouping members from largest to smallest usually avoids most of it:
 
 ![struct mix (char, int, char, double) needs 24 bytes with 10 bytes of padding; struct tidy (double, int, char, char) holds the same members in 16](images/struct-padding-order.svg)

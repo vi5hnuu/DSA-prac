@@ -167,6 +167,10 @@ int main(void)
 +112 Paper Boats  342
 ```
 
+:::callout{kind=note}
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the array. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
+:::
+
 `shelf` gives the address of `shelf[0]`, so `p` starts at the first structure. Each `p++` moves 56 bytes — one whole `struct book` (25 + 25 + 2 bytes of padding + 4) — so `p->name` is the name of the next book. The loop stops when `p` reaches `shelf + n`, one past the last element.
 
 ### Operator precedence with ->

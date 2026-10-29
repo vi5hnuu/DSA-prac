@@ -197,6 +197,8 @@ rates is at +0, sizeof rates = 20
 So `rates` gives **5000** and `sizeof rates` gives **20**.
 
 Mentioning the name of an array gives its base address — the address of element `0`, hence offset `+0`. There is an exception: with `sizeof`, the name means the **whole array**, so `sizeof rates` is 5 elements × 4 bytes = **20**. (Old 16-bit systems with 2-byte `int`s printed `10`.) The `&` operator is the other exception, as the next puzzle shows.
+
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the array. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
 :::
 
 ### 7. rates + 1 vs &rates + 1

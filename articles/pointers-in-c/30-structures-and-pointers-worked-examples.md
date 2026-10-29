@@ -96,6 +96,8 @@ The second line prints the three members.
 Notice how the message was stored: with `strcpy`, the string copy function. Why not simply write `m.mess = "Every cloud has a silver lining";`, the way we assigned values to `num` and `f`? The answer is an emphatic **no**. Unlike `m.num` and `m.f`, `m.mess` is an **array**, and mentioning an array gives its base address — which can never appear on the left-hand side of an assignment. In other words, `m.mess` is not an *lvalue*. GCC says *assignment to expression with array type*. (A structure **initialiser** can set it, though: `= {7, 2.5f, "Every cloud..."}`.)
 
 Notice also that this structure has no name. As we saw earlier, the type can then only be used in this one declaration.
+
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the structure. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
 :::
 
 ### 3. An array of structures in memory

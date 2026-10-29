@@ -39,6 +39,8 @@ int main(void)
 - `**box` is that row, which becomes the address of its first `int`.
 
 Only `***box` goes all the way down to an actual value: `box[0][0][0]`, which is **7**. (They are the same address but not the same type — `box + 1`, `*box + 1` and `**box + 1` move 48, 16 and 4 bytes respectively, as shown in the article on three-dimensional arrays.)
+
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the array. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
 :::
 
 ### 2. Four ways to write one element

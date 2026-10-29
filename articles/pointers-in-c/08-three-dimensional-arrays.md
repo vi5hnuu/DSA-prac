@@ -149,6 +149,10 @@ stock + 1    -> +48   (next warehouse)
 *(*(*(stock + 1) + 2) + 0) = 9
 ```
 
+:::callout{kind=note}
+**Why `(char *)`?** This program shows each address as its distance in **bytes** from the start of the array. Two rules of C make the cast necessary. First, C can only subtract two pointers of the **same type**, so both are converted to one type. Second, the difference between two pointers is counted in units of the type they point to, not in bytes: two `int *` pointers 8 bytes apart differ by 2 (two `int`s). A `char` is exactly one byte, so subtracting two `char *` pointers counts bytes. The cast does not change any address — it only changes how the subtraction counts. (`%td` is the `printf` format for a pointer difference, whose type is `ptrdiff_t`.)
+:::
+
 (Instead of raw addresses, which change on every run, the program prints each position as a byte offset from the start of the array.)
 
 The first three lines are all `+0`: same address, as predicted. The next block is where it gets interesting:
