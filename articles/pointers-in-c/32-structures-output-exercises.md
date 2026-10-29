@@ -1,6 +1,6 @@
 title : Structures and Linked Lists: Output Exercises
 
-summary : Five exercises on structures and pointers: arrays of pointers to structures, a list built from malloc'd nodes, 2-D char arrays inside a structure, nested structures reached through a pointer, and calling a function before it is declared. Work out each output, then check the answer and the bugs hidden in each.
+summary : Five exercises on structures and pointers: arrays of pointers to structures, a list of malloc'd nodes, 2-D char arrays in a structure, nested structures through a pointer, and calling a function before declaring it. Predict each output, then find the hidden bug.
 
 # Structures and Linked Lists: Output Exercises
 

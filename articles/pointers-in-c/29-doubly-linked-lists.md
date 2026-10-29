@@ -1,6 +1,6 @@
 title : Doubly Linked Lists
 
-summary : In a doubly linked list every node points both to the next node and to the previous one, so you can walk the list in either direction and delete a node without searching for its predecessor. Build one with append, add at the beginning, insert after, delete and display both ways, with every link change drawn.
+summary : In a doubly linked list each node points to both the next and the previous node, so you can walk either way and delete a node without searching for its predecessor. Build one with append, insert, delete and two-way display, with every link change drawn.
 
 # Doubly Linked Lists
 

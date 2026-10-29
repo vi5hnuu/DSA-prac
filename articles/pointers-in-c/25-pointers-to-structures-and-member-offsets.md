@@ -1,6 +1,6 @@
 title : Pointers to Structures and Member Offsets
 
-summary : Point at a structure, reach its members with the -> operator, pass structures to functions by address, walk arrays of structures with pointers and create structures with malloc. Then learn how member offsets work, and how offsetof lets code find a whole structure from a pointer to one of its members.
+summary : Point at a structure, reach its members with ->, pass structures by address, walk arrays of structures with pointers and create structures with malloc. Then see how member offsets work, and how offsetof finds a whole structure from a pointer to one member.
 
 # Pointers to Structures and Member Offsets
 

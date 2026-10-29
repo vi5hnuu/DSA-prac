@@ -1,6 +1,6 @@
 title : Structures and Linked Lists: Programming Exercises
 
-summary : Five programming exercises with full solutions: a recursive determinant with calloc, decoding and changing file attributes in a raw directory entry, listing a directory alphabetically with a linked list, and decoding a disk's boot sector and partition table byte by byte — and why a struct cannot simply be laid over raw disk bytes.
+summary : Five exercises with full solutions: a recursive determinant using calloc, reading and changing file attributes in a raw directory entry, a sorted directory listing with a linked list, and decoding a boot sector and partition table byte by byte.
 
 # Structures and Linked Lists: Programming Exercises
 

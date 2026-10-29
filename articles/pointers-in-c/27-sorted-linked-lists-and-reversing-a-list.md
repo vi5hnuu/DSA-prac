@@ -380,8 +380,10 @@ Reversing visits each node once, so it takes time proportional to the length of 
 For an empty list, `*q` is `NULL`, and `(*q)->data` would follow a `NULL` pointer. Because `||` stops as soon as its left side is true, writing the `NULL` check first guarantees that `(*q)->data` is only read when there is a first node.
 :::
 
-:::details[If the condition in add() used < instead of <=, where would a duplicate value be inserted?]
-`temp` would stop at a node whose data is less than `num`, so a new value equal to existing ones would be inserted **before** all of them rather than after. The list would still be sorted; only the order among equal values changes.
+:::details[In the shorter pointer-to-pointer version of add(), what changes if the loop condition is (*q)->data < num instead of <= num?]
+The loop then stops at the first node whose data is **greater than or equal to** `num`, so a new value equal to existing ones is inserted **before** all of them rather than after. The list is still sorted; only the order among equal values changes.
+
+(Be careful making the same change in the longer `add()`: if only its first `<=` became `<`, a duplicate would match neither the "goes first" test nor any position in the loop. The loop would end without inserting it, and the new node would leak. A condition that decides **where** to insert must cover every possible case.)
 :::
 
 :::details[In reverse(), what happens if steps 3 and 4 are swapped, i.e. r->link = s; is done before q = q->link;?]

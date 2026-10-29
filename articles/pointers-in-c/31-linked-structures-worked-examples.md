@@ -103,9 +103,7 @@ Now the `printf`s:
 - Mentioning `p` gives the base address of the array `p[]`, so `*p` is the value stored at that address — which is nothing but `p[0]`. (Recall that `n[i]` is the same as `*(n + i)`.) So `(*p)->str` is `"Kabir"` once again.
 - `*p` is the address of `arr[1]`, so `**p` is the structure `arr[1]` itself, and `(**p).str` is `"Kabir"` a third time.
 
-:::callout{kind=warning}
-Older versions of this puzzle print the third line with `printf("%s", **p);` — passing the whole **structure** `arr[1]` where `%s` expects a `char *`. It "works" on some systems only because `str` happens to be the first member, so the structure's first bytes are the string's address. It is still wrong: GCC warns *format '%s' expects argument of type 'char \*', but argument 2 has type 'struct s1'*, and the behaviour is undefined. To get the string, name the member: `(**p).str`, or `(*p)->str`.
-:::
+**Watch out:** Older versions of this puzzle print the third line with `printf("%s", **p);` — passing the whole **structure** `arr[1]` where `%s` expects a `char *`. It "works" on some systems only because `str` happens to be the first member, so the structure's first bytes are the string's address. It is still wrong: GCC warns *format '%s' expects argument of type 'char \*', but argument 2 has type 'struct s1'*, and the behaviour is undefined. To get the string, name the member: `(**p).str`, or `(*p)->str`.
 :::
 
 ### 10. Swapping strings through structure pointers
