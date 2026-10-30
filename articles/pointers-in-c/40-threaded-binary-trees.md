@@ -1,6 +1,6 @@
 title : Threaded Binary Trees
 
-summary : Traverse a binary tree in inorder with no recursion and no stack, by reusing the NULL links of the leaves as threads to the inorder successor and predecessor. Build a threaded binary search tree with a head node, insert and delete nodes while keeping every thread correct, and see why the flags are needed.
+summary : Traverse a binary tree in inorder with no recursion and no stack, by turning the NULL links of the leaves into threads to the inorder successor and predecessor. Build a threaded binary search tree with a head node, and insert and delete nodes while keeping every thread correct.
 
 # Threaded Binary Trees
 
