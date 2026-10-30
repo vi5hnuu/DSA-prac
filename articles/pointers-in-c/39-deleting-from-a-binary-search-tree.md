@@ -30,6 +30,136 @@ Why is this still a binary search tree? The successor is larger than everything 
 
 So the whole logic of deleting a node with two children is: locate the inorder successor, copy its data, and reduce the problem to a simple deletion of a node with one or zero children.
 
+### Successor or predecessor?
+
+The inorder successor is not the only value that can take the deleted node's place. Its mirror image works just as well: the **inorder predecessor**, the next **smaller** value in the tree. To find it, go to the node's **left** son, then follow **right** links as far as possible — it is the rightmost node of the left subtree. It is larger than everything else in the left subtree and smaller than everything in the right subtree, so it too can sit where the deleted value was. And it can never have a right son, so removing it is again case (b) or (c).
+
+So, to delete a node with two children, there are two equally valid choices:
+
+| | Inorder successor | Inorder predecessor |
+|---|---|---|
+| Where | leftmost node of the **right** subtree | rightmost node of the **left** subtree |
+| How to find it | right once, then left as far as possible | left once, then right as far as possible |
+| Its value | the smallest value larger than (or equal to) the node's | the largest value smaller than the node's |
+| Children it can have | never a left son | never a right son |
+
+Both keep the tree a valid binary search tree, and both produce the same sorted (inorder) sequence. They differ only in the **shape** of the tree that results:
+
+![Deleting 50: its predecessor is 40 and its successor is 60. Using the successor, 60 becomes the root and 65 moves up; using the predecessor, 40 becomes the root and 35 moves up](images/bst-delete-successor-vs-predecessor.svg)
+
+The following program deletes 50 from the same tree twice, once each way, and prints the result in **preorder**, which lists the root first and so shows the shape:
+
+```c runnable
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+struct btreenode
+{
+    struct btreenode *leftchild;
+    int data;
+    struct btreenode *rightchild;
+};
+
+void insert(struct btreenode **sr, int num)
+{
+    if (*sr == NULL) {
+        *sr = malloc(sizeof **sr);
+        if (*sr == NULL)
+            exit(EXIT_FAILURE);
+        (*sr)->leftchild = (*sr)->rightchild = NULL;
+        (*sr)->data = num;
+    } else if (num < (*sr)->data) {
+        insert(&(*sr)->leftchild, num);
+    } else {
+        insert(&(*sr)->rightchild, num);
+    }
+}
+
+/* deletes num; a node with two children is replaced by its inorder
+   successor (use_pred == false) or its inorder predecessor (use_pred == true) */
+void delete_node(struct btreenode **link, int num, bool use_pred)
+{
+    while (*link != NULL && (*link)->data != num)  /* find the link to the node */
+        link = num < (*link)->data ? &(*link)->leftchild : &(*link)->rightchild;
+    if (*link == NULL)
+        return;
+
+    struct btreenode *x = *link;
+
+    if (x->leftchild != NULL && x->rightchild != NULL) {
+        struct btreenode **r;
+        if (use_pred) {                            /* left once, then right to the end */
+            r = &x->leftchild;
+            while ((*r)->rightchild != NULL)
+                r = &(*r)->rightchild;
+        } else {                                   /* right once, then left to the end */
+            r = &x->rightchild;
+            while ((*r)->leftchild != NULL)
+                r = &(*r)->leftchild;
+        }
+        x->data = (*r)->data;                      /* copy the replacement value up */
+        link = r;                                  /* and delete the replacement node */
+        x = *link;
+    }
+
+    *link = x->leftchild != NULL ? x->leftchild : x->rightchild;
+    free(x);
+}
+
+/* preorder shows the SHAPE of the tree: the root comes first */
+void preorder(const struct btreenode *sr)
+{
+    if (sr == NULL)
+        return;
+    printf("%d ", sr->data);
+    preorder(sr->leftchild);
+    preorder(sr->rightchild);
+}
+
+void free_tree(struct btreenode *sr)
+{
+    if (sr == NULL)
+        return;
+    free_tree(sr->leftchild);
+    free_tree(sr->rightchild);
+    free(sr);
+}
+
+int main(void)
+{
+    int a[] = {50, 30, 70, 20, 40, 60, 80, 35, 65};
+
+    for (int pass = 0; pass < 2; pass++) {
+        struct btreenode *bt = NULL;
+        bool use_pred = (pass == 1);
+
+        for (int i = 0; i < 9; i++)
+            insert(&bt, a[i]);
+        delete_node(&bt, 50, use_pred);
+
+        printf("Using the inorder %-11s preorder: ", use_pred ? "predecessor," : "successor,");
+        preorder(bt);
+        printf("\n");
+        free_tree(bt);
+    }
+    return 0;
+}
+```
+
+```
+Using the inorder successor,  preorder: 60 30 20 40 35 70 65 80 
+Using the inorder predecessor, preorder: 40 30 20 35 70 60 65 80 
+```
+
+Which one should a program use? Three points help decide:
+
+- **Equal values.** Our `insert()` sends a value **equal** to a node into its **right** subtree. The successor respects that rule: the value moved up is the smallest of the right subtree, so anything equal to it stays on its right. The predecessor can break it. Insert 50, 30, 70 and another 30, then delete 50: the second 30 is the predecessor, it moves up to the root, and the first 30 is now in the root's **left** subtree — equal to its father, on the wrong side. The tree still works for searching, but no longer follows its own convention. So, with "equal goes right", prefer the successor; a tree that sends equal values left should prefer the predecessor.
+- **Balance.** Always taking the replacement from the same side slowly makes the tree lopsided over many deletions: the right subtrees keep losing nodes while the left subtrees do not. Some implementations therefore alternate between the successor and the predecessor, or take the replacement from whichever subtree is **taller**, to keep the tree balanced. (This effect was studied by Hibbard, after whom the successor method is often called *Hibbard deletion*.)
+- **Cost.** Either way, finding the replacement means walking down one subtree, so the cost is at most the depth of the tree. Neither is faster in general.
+
+The rest of this article uses the successor, as most textbooks do.
+
 ## The Program
 
 ```c runnable
@@ -252,7 +382,8 @@ The link that led to `x` now leads to `x`'s only child — or to `NULL`, if `x` 
 
 - Deleting from a BST has four cases: not found, a leaf, one child, two children.
 - A leaf or a node with one child is removed by making the link that pointed to it point to its child (or `NULL`).
-- A node with two children takes the data of its **inorder successor** (right once, then left as far as possible); the successor, which has at most one child, is then deleted instead.
+- A node with two children takes the data of its **inorder successor** (right once, then left as far as possible) or of its **inorder predecessor** (left once, then right as far as possible); that node, which has at most one child, is then deleted instead.
+- Both choices give a valid BST with the same sorted order but a different shape. With "equal values go right", the successor keeps the convention; alternating between the two helps keep the tree balanced.
 - Working with the **address of the link** that leads to a node (`struct btreenode **`) removes the special cases for the root and for left versus right sons.
 - Always free the removed node, and always test deleting the root.
 
@@ -266,8 +397,8 @@ For 30: go right to 40, then left to 35, which has no left son — the successor
 It is found by following left links until there are none. If it had a left son, the search would have continued to that son, which would be an even smaller value in the right subtree.
 :::
 
-:::details[Instead of the inorder successor, could we use the inorder predecessor?]
-Yes. The **inorder predecessor** — go left once, then right as far as possible — is the largest value in the left subtree. It is larger than everything else in the left subtree and smaller than everything in the right subtree, so it can replace the deleted value too. It never has a right son, so deleting it is again case (b) or (c).
+:::details[Delete 30 from the tree built from 50 30 70 20 40 60 80 35 65, first using its successor and then (starting again) using its predecessor. Which value replaces 30 each time?]
+30 has two children (20 and 40). Its **successor** is found by going right to 40 and then left to 35: **35** replaces 30, and 35's node (a leaf) is removed. Its **predecessor** is found by going left to 20, which has no right son: **20** replaces 30, and 20's node (a leaf) is removed.
 :::
 
 :::details[What would go wrong in delete_node() if search() returned the node itself (struct btreenode *) instead of the link to it?]
