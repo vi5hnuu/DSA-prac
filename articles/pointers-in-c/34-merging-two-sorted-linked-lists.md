@@ -373,6 +373,117 @@ The merge simply copies the second list.
 
 Every node was created with `malloc`, so `main` frees all three lists at the end. Notice that the merged list does not share any nodes with `first` or `second`: `merge()` makes new nodes. That is why all three lists can be freed independently. (If `merge()` had **re-linked** the original nodes instead of copying their values, `first` and `second` would no longer be separate lists, and freeing them all would free some nodes twice.)
 
+## Another Way: Relinking Instead of Copying
+
+`merge()` above builds the merged list from **new** nodes and leaves `first` and `second` untouched. There is a second way: build the result out of the **existing** nodes, by changing their links. No `malloc` is needed at all — but the two original lists are used up in the process.
+
+```c runnable
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node
+{
+    int data;
+    struct node *link;
+};
+
+void add(struct node **q, int num)             /* ascending-order insert */
+{
+    struct node *r = malloc(sizeof *r);
+    if (r == NULL)
+        exit(EXIT_FAILURE);
+    r->data = num;
+    while (*q != NULL && (*q)->data < num)
+        q = &(*q)->link;
+    r->link = *q;
+    *q = r;
+}
+
+/* merges two ascending lists by RELINKING their nodes; no node is created.
+   A common value is kept once and its duplicate node is freed.
+   Afterwards *p and *q are empty: their nodes all belong to the result. */
+struct node *merge_relink(struct node **p, struct node **q)
+{
+    struct node dummy;                         /* a fake first node: its link is the result */
+    struct node *last = &dummy;                /* last node of the result so far */
+    struct node *a = *p, *b = *q;
+
+    while (a != NULL && b != NULL) {
+        if (a->data < b->data) {
+            last->link = a;                    /* move node a to the result */
+            a = a->link;
+        } else if (b->data < a->data) {
+            last->link = b;
+            b = b->link;
+        } else {                               /* equal: keep a, free b */
+            struct node *dup = b;
+            last->link = a;
+            a = a->link;
+            b = b->link;
+            free(dup);
+        }
+        last = last->link;
+    }
+    last->link = (a != NULL) ? a : b;          /* the rest is already linked */
+
+    *p = *q = NULL;
+    return dummy.link;
+}
+
+void display(const struct node *q)
+{
+    for (; q != NULL; q = q->link)
+        printf("%d ", q->data);
+    printf("\n");
+}
+
+int main(void)
+{
+    struct node *first = NULL, *second = NULL;
+    int a[] = {14, 3, 22, 9, 31, 17, 5};
+    int b[] = {9, 40, 22, 6, 31, 12, 3};
+
+    for (int i = 0; i < 7; i++) {
+        add(&first, a[i]);
+        add(&second, b[i]);
+    }
+
+    struct node *third = merge_relink(&first, &second);
+    printf("The merged list : ");
+    display(third);
+    printf("first is %s, second is %s\n", first ? "not empty" : "empty", second ? "not empty" : "empty");
+
+    while (third != NULL) {
+        struct node *next = third->link;
+        free(third);
+        third = next;
+    }
+    return 0;
+}
+```
+
+```
+The merged list : 3 5 6 9 12 14 17 22 31 40 
+first is empty, second is empty
+```
+
+Two techniques make this version short:
+
+- **A dummy node.** `struct node dummy;` is an ordinary local variable used only for its `link` member. `last` starts by pointing at it, so the very first node is attached with the same statement as every other node: `last->link = a;`. When the loop ends, `dummy.link` is the first node of the merged list. This removes the "is the result still empty?" test that `append_node()` needed.
+- **The rest needs no copying.** When one list runs out, the remaining nodes of the other are already linked together in order, so one assignment, `last->link = (a != NULL) ? a : b;`, attaches all of them.
+
+When the same value is in both lists, one of its two nodes is no longer needed, so it is freed. And because the nodes of `first` and `second` now all belong to the merged list, the function sets both to `NULL`: otherwise, freeing all three lists later would free the same nodes twice.
+
+Which version to use?
+
+| | Copying (`merge`) | Relinking (`merge_relink`) |
+|---|---|---|
+| Original lists | unchanged | used up (become empty) |
+| Extra memory | one new node per merged value | none |
+| Speed | a `malloc` per value | only pointer changes |
+
+Use copying when the original lists are still needed afterwards; use relinking when they are not — for example inside **merge sort**, which repeatedly merges lists it has just split.
+
 ## How Fast Is It?
 
 Each step of the main loop copies one node and moves at least one of `p` and `q` forward. So for lists of lengths *m* and *n*, merging takes at most *m* + *n* steps — it looks at every node once. This is the same merging step that the **merge sort** algorithm uses to sort.

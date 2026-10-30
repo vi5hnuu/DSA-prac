@@ -237,6 +237,74 @@ Inside the function, `*sr` is that pointer variable:
 
 Each call goes one level deeper, so the recursion ends after at most *depth* + 1 calls.
 
+### Inserting without recursion
+
+`insert()` calls itself once per level, so it needs as many nested calls as the tree is deep. The same walk can be written as a loop, using the pointer-to-a-link idea from the linked-list articles:
+
+```c runnable
+#include <stdio.h>
+#include <stdlib.h>
+
+struct btreenode
+{
+    struct btreenode *leftchild;
+    int data;
+    struct btreenode *rightchild;
+};
+
+/* inserts num without recursion: walk the child LINKS down to an empty one */
+void insert(struct btreenode **sr, int num)
+{
+    while (*sr != NULL)
+        sr = (num < (*sr)->data) ? &(*sr)->leftchild : &(*sr)->rightchild;
+
+    *sr = malloc(sizeof **sr);                 /* *sr is the empty link we stopped at */
+    if (*sr == NULL)
+        exit(EXIT_FAILURE);
+    (*sr)->leftchild = (*sr)->rightchild = NULL;
+    (*sr)->data = num;
+}
+
+void inorder(const struct btreenode *sr)
+{
+    if (sr == NULL)
+        return;
+    inorder(sr->leftchild);
+    printf("%d ", sr->data);
+    inorder(sr->rightchild);
+}
+
+void free_tree(struct btreenode *sr)
+{
+    if (sr == NULL)
+        return;
+    free_tree(sr->leftchild);
+    free_tree(sr->rightchild);
+    free(sr);
+}
+
+int main(void)
+{
+    struct btreenode *bt = NULL;
+    int items[] = {41, 23, 68, 15, 30, 52, 77, 27, 35, 60};
+
+    for (int i = 0; i < 10; i++)
+        insert(&bt, items[i]);
+    inorder(bt);
+    printf("\n");
+    free_tree(bt);
+    return 0;
+}
+```
+
+```
+15 23 27 30 35 41 52 60 68 77 
+```
+
+`sr` moves from link to link — `&bt`, then the address of the root's `leftchild` or `rightchild`, and so on — until it reaches a link that is `NULL`. That empty link is exactly where the new node belongs, so `*sr = malloc(...)` stores the new node there directly.
+
+Both versions do the same work. The recursive one is closer to the definition of a tree; the loop uses no extra stack space, which matters for a badly unbalanced tree that may be thousands of levels deep, where deep recursion could overflow the call stack.
+
 ### The traversals
 
 Each traversal function is a direct translation of its definition. Take `inorder()`:

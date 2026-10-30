@@ -284,6 +284,135 @@ The "backing up" happens automatically: when a recursive call returns, the loop 
 
 `visited[v - 1]` uses `v - 1` because vertices are numbered from 1 while the array starts at 0. `visited` is passed as a parameter rather than being a global variable, so the function works for any graph, and `main` can reset it between searches.
 
+### Depth first search without recursion
+
+Recursion keeps track of "where to come back to" on the call stack. The same search can use an explicit stack of vertices instead:
+
+```c runnable
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define MAX 8                                  /* number of vertices, numbered 1 to MAX */
+
+struct node
+{
+    int data;                                  /* a neighbouring vertex */
+    struct node *next;
+};
+
+void add_edge(struct node *arr[], int u, int v);
+void dfs(int v, struct node *arr[], bool visited[]);
+void dfs_stack(int v, struct node *arr[], bool visited[]);
+void free_graph(struct node *arr[]);
+
+int main(void)
+{
+    struct node *arr[MAX] = {NULL};            /* arr[v - 1]: list of v's neighbours */
+    bool visited[MAX];
+    int edges[][2] = {
+        {1, 2}, {1, 5}, {2, 3}, {2, 4}, {3, 6},
+        {4, 6}, {4, 7}, {5, 7}, {6, 8}, {7, 8}
+    };
+    int nedges = sizeof edges / sizeof edges[0];
+
+    for (int i = 0; i < nedges; i++) {         /* undirected: store each edge both ways */
+        add_edge(arr, edges[i][0], edges[i][1]);
+        add_edge(arr, edges[i][1], edges[i][0]);
+    }
+
+    for (int i = 0; i < MAX; i++)
+        visited[i] = false;
+    printf("Depth first search:  ");
+    dfs(1, arr, visited);
+    printf("\n");
+
+    for (int i = 0; i < MAX; i++)
+        visited[i] = false;
+    printf("DFS with a stack:    ");
+    dfs_stack(1, arr, visited);
+    printf("\n");
+
+    free_graph(arr);
+    return 0;
+}
+
+/* adds v to the END of u's list, so neighbours stay in the order given */
+void add_edge(struct node *arr[], int u, int v)
+{
+    struct node *r = malloc(sizeof *r);
+    if (r == NULL)
+        exit(EXIT_FAILURE);
+    r->data = v;
+    r->next = NULL;
+
+    struct node **q = &arr[u - 1];
+    while (*q != NULL)
+        q = &(*q)->next;
+    *q = r;
+}
+
+/* depth first search: go as deep as possible before backing up */
+void dfs(int v, struct node *arr[], bool visited[])
+{
+    visited[v - 1] = true;
+    printf(" %d", v);
+
+    for (const struct node *q = arr[v - 1]; q != NULL; q = q->next)
+        if (!visited[q->data - 1])
+            dfs(q->data, arr, visited);        /* recursion remembers where to come back */
+}
+
+/* depth first search with an explicit stack instead of recursion */
+void dfs_stack(int v, struct node *arr[], bool visited[])
+{
+    int stack[MAX * MAX + 1];                  /* at most one push per list entry, plus v */
+    int top = 0;
+
+    stack[top++] = v;
+    while (top > 0) {
+        int u = stack[--top];
+        if (visited[u - 1])                    /* it may have been pushed more than once */
+            continue;
+        visited[u - 1] = true;
+        printf(" %d", u);
+
+        /* push the neighbours in REVERSE order, so the first one is popped first */
+        int nb[MAX], n = 0;
+        for (const struct node *q = arr[u - 1]; q != NULL; q = q->next)
+            nb[n++] = q->data;
+        while (n > 0) {
+            int w = nb[--n];
+            if (!visited[w - 1])
+                stack[top++] = w;
+        }
+    }
+}
+
+void free_graph(struct node *arr[])
+{
+    for (int i = 0; i < MAX; i++)
+        while (arr[i] != NULL) {
+            struct node *next = arr[i]->next;
+            free(arr[i]);
+            arr[i] = next;
+        }
+}
+```
+
+```
+Depth first search:   1 2 3 6 4 7 5 8
+DFS with a stack:     1 2 3 6 4 7 5 8
+```
+
+Both versions visit the vertices in the same order. Three details make that happen:
+
+- A vertex is marked visited when it is **popped**, not when it is pushed, because that is when the recursive version visits it. As a result a vertex can be pushed more than once (from two different neighbours), so a popped vertex that is already visited is simply skipped with `continue`.
+- The recursive version explores the **first** neighbour in the list first. A stack returns the **last** item pushed, so the neighbours are pushed in **reverse** order, which brings the first neighbour to the top.
+- Every push corresponds to one entry in some adjacency list, so the stack never holds more than the total number of list entries plus the start vertex; `MAX * MAX + 1` is a safe upper bound.
+
+The explicit stack avoids deep recursion on very large graphs. Notice how close it is to `bfs()`: replace the stack by a **queue** and depth first becomes breadth first.
+
 ### Breadth first search
 
 Breadth first search (BFS) starts at vertex *v* and marks it as visited. It differs from DFS in that **all** unvisited vertices adjacent to *v* are visited next. Then the unvisited vertices adjacent to **those** vertices are visited, and so on — the search spreads out from *v* in waves. On G: 1 first; then 1's neighbours 2 and 5; then their unvisited neighbours 3, 4 (from 2) and 7 (from 5); finally 6 and 8. Order: **1 2 5 3 4 7 6 8**.

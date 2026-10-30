@@ -367,6 +367,76 @@ The function also works for the edge cases without any special code: an empty li
 
 Reversing visits each node once, so it takes time proportional to the length of the list, and it needs only three extra pointers, however long the list is.
 
+## Reversing with Recursion
+
+The three-pointer loop is the standard way to reverse a list, but recursion gives an elegant alternative. To reverse a list: reverse everything **after** the first node, then attach the first node at the end.
+
+```c runnable
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node
+{
+    int data;
+    struct node *link;
+};
+
+/* reverses the list starting at q and returns the new first node */
+struct node *reverse(struct node *q)
+{
+    if (q == NULL || q->link == NULL)          /* empty or one node: already reversed */
+        return q;
+
+    struct node *rest = reverse(q->link);      /* reverse everything after q */
+    q->link->link = q;                         /* the old second node now points back to q */
+    q->link = NULL;                            /* q is the new last node */
+    return rest;
+}
+
+int main(void)
+{
+    struct node *p = NULL;
+
+    for (int v = 10; v <= 60; v += 10) {       /* add at the beginning: 60 50 ... 10 */
+        struct node *t = malloc(sizeof *t);
+        if (t == NULL)
+            return 1;
+        t->data = v;
+        t->link = p;
+        p = t;
+    }
+
+    for (const struct node *t = p; t != NULL; t = t->link)
+        printf("%d ", t->data);
+    printf("\n");
+
+    p = reverse(p);
+    for (const struct node *t = p; t != NULL; t = t->link)
+        printf("%d ", t->data);
+    printf("\n");
+
+    while (p != NULL) {
+        struct node *next = p->link;
+        free(p);
+        p = next;
+    }
+    return 0;
+}
+```
+
+```
+60 50 40 30 20 10 
+10 20 30 40 50 60 
+```
+
+How `reverse()` works on 60 50 40 …:
+
+- A list that is empty or has one node is already reversed, so it is returned as it is.
+- Otherwise, `reverse(q->link)` reverses everything after `q` and returns the new first node — the old **last** node — which is passed back up unchanged as the final answer.
+- At that moment `q->link` still points to the node that used to come after `q`, which is now the **last** node of the reversed rest. `q->link->link = q;` makes that node point back to `q`, and `q->link = NULL;` makes `q` the new end.
+
+This version returns the new first node instead of taking `struct node **`, so the caller writes `p = reverse(p);`. It is shorter, but each node costs one nested function call: for a list of a million nodes, the iterative version is the safe choice.
+
 ## Key Takeaways
 
 - To keep a list sorted, insert each new node after the last node whose data is `<=` the new value; if the list is empty or the new value is smaller than the first node, insert at the front.
