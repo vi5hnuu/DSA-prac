@@ -4,95 +4,111 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="">
+    <list default="true" id="b31483f2-28a2-4191-b5a2-dc3816969eca" name="Changes" comment="removed problems slug">
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/2d-array-in-memory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/2d-char-array-waste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/3d-array-in-memory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/3d-array-pointer-steps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/argc-argv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-in-memory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-name-and-subscripts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-of-lists-dictionary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-of-pointers-to-strings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-of-pointers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-of-struct-pointers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-of-structures.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-out-of-bounds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/array-vs-string-literal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/binary-search-tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/binary-tree-terms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/bst-delete-leaf-one-child.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/bst-delete-successor-vs-predecessor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/bst-delete-two-children.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/bytes-and-pointer-types.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/call-by-value-vs-reference.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/circular-linked-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/circular-two-nodes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/const-pointer-forms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/container-of-offset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/deque.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/dll-delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/dll-insert-after.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/doubly-linked-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ex-3d-address-map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ex-shuffled-pointer-array.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/fat-chain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/fat-directory-entry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/fat12-packing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/file-pointer-structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/function-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/graph-adjacency-lists.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/graph-g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/graphs-undirected-directed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/jagged-rows-with-pointer-array.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/linked-list-concept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ll-add-after.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ll-add-at-beginning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ll-append.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ll-delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ll-temp-link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/malloc-block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/mbr-partition-table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/memory-map-one-variable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/memory-map-pointer-to-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/memory-map-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/merge-sorted-lists.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/mirror-binary-tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/not-binary-trees.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/pointer-step-sizes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/pointer-to-array-vs-array-of-pointers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/pointer-to-int-vs-pointer-to-row.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/pointer-to-structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/polynomial-linked-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/queue-add-delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/reading-a-pointer-declaration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/reading-function-returning-array-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/reverse-linked-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/sa-2d-decays-to-row-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/sa-array-vs-pointer-access.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/segment-offset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/sort-data-vs-links.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/sorted-insert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/stack-and-queue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/stack-push-pop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/static-array-shared-storage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/str-memory-layout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/str-pointer-walk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/strcat-step-by-step.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/strcmp-first-mismatch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/strcpy-step-by-step.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/strict-and-complete-binary-trees.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/string-offsets-example.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/string-pieces-reordered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/struct-account-layout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/struct-array-padding.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/struct-array-self-links.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/struct-padding-order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/substring-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/swap-list-nodes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/swap-string-pointers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/threaded-binary-tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/three-level-string-pointers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/tree-family.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/two-pointers-meet-or-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/video-memory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws-backward-loop-bounds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws-bump-copy-and-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws-negative-index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws-p-plus-i-every-second.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws-pointer-minus-base-is-index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws-square-all-walk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws2-2d-rows-and-int-pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws2-3d-element-path.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws2-array-of-row-pointers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws2-pointer-to-pointer-array.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws2-ptr-states-a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/pointers-in-c/png/ws2-ptr-states-b.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Array_insert_at_end" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Contest/Get_the_shadow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Contest/Nearest_perfect_Square.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Arrays/Contest/The_conversion_to_One.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Inorder traversal.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Insert_node.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Level_order.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Minimum_element.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Node in a given level.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Print BST in  A GIVEN RANGE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/Searchanode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/alternate leaf node sum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Binary Searcg Tree/strange Median.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/BinarytoGray.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Bit_difference.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/First_set_bit.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Longest_Consecutive1's.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Number_is_sparse.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Power_of_2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/Rightmost_different_bit.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Bit Magic/kth_bit_set.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Hashing/K_Sum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Hashing/XOR_Pair.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Hashing/kth_smallest_distance.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/A_Boolean_matRIX_problem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Toggle_the_middle.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Without_Adjacent.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Without_Adjacent_othermethod.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Contest/Searching/Without_Adjacent_othermethod_space.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Greedy/Shop in Candy Store.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Hashing/Pair of Element.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Absolute Value.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Addition_Under_Modulo.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/CelciusToFahrienheit.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Digits_In_Factorial.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Factorial_of_number.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/GP_Term.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Modular_Multiplicative_Inverse.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Multiplication_Under_Modulo.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Primality_Test.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Print 1 To N Without Loop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Mathematics/Quadratic_Equation_Roots.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Recursion/Sum_of_digits.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Anagram.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Binary string.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Distance_pattern_search.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Implement_strstr.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Keypad.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Lexicographic.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Maximum_occuring.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Modified_string.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Naive_pattern_search.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Non_repeating.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Panagram.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Pattern_search_KMP.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Rabincarp.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Remove_characters.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Repating_character.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Reverse_words.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/String_rotated_ornot.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Strings/Sumofanoinastring.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/BTtoCdll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/CheckforBalancedTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Checkifsubtree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/ContructBinaryTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Count_noofsub_sum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Create_nodeat_samelevel.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/DiameterofBT.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/FOldable.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LeftViewofBinaryTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LevelOrderTraversal.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LevelOrderTraversal_1.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LevelOrderTraversal_SP.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/LowestCOmmonancestor.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Makebinarytree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximu_sum_of_NON-ADJACENT.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximum_diffe_bw_NA.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximum_path_sum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Maximumwidthoftree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/MirrorTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Nodeatdistance.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/RightViewofBinaryTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/Serialize_and_deserialize.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/TreefromPostIN.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaSelfPaced_GeeksForGeeks/DSA--GeeksForGeeks-master/Tree/VerticalwidthofBT.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +146,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "articles",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/Users/vishnu/WebstormProjects/DSA-prac/articles/pointers-in-c/png",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -163,9 +180,22 @@
       <workItem from="1762917151605" duration="792000" />
       <workItem from="1763087373148" duration="140000" />
     </task>
+    <task id="LOCAL-00001" summary="removed problems slug">
+      <option name="closed" value="true" />
+      <created>1792985978962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792985978962</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed problems slug" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed problems slug" />
   </component>
 </project>
